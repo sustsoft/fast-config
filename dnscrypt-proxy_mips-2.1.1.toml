@@ -290,7 +290,7 @@ netprobe_address = '84.200.69.80:53'
 ## Automatic log files rotation
 
 # Maximum log files size in MB - Set to 0 for unlimited.
-log_files_max_size = 10
+log_files_max_size = 1
 
 # How long to keep backup files, in days
 log_files_max_age = 7
@@ -314,7 +314,7 @@ log_files_max_backups = 1
 ## This makes things faster when there is no IPv6 connectivity, but can
 ## also cause reliability issues with some stub resolvers.
 
-block_ipv6 = false
+block_ipv6 = true
 
 
 ## Immediately respond to A and AAAA queries for host names without a domain name
@@ -379,22 +379,22 @@ cache_size = 1024
 
 ## Minimum TTL for cached entries
 
-cache_min_ttl = 2400
+cache_min_ttl = 10
 
 
 ## Maximum TTL for cached entries
 
-cache_max_ttl = 86400
+cache_max_ttl = 10
 
 
 ## Minimum TTL for negatively cached entries
 
-cache_neg_min_ttl = 60
+cache_neg_min_ttl = 10
 
 
 ## Maximum TTL for negatively cached entries
 
-cache_neg_max_ttl = 600
+cache_neg_max_ttl = 10
 
 
 
